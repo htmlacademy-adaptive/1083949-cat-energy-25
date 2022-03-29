@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ольга Ходунова](https://up.htmlacademy.ru/adaptive/25/user/1083949).
-* Наставник: `Arthur Litovko`.
+* Наставник: [Arthur Litovko] (https://github.com/baileys-li).
 
 ---
 
