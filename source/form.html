@@ -7,39 +7,36 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <h1 class="visually hidden">CAT ENERGY</h1>
-    <header class="main__header">
-      <a class="header__logo logo__link" href="#">
-        <img class="logo-link__img" width="33" height="37" alt="Наш маскот." src="img/icon/logo_mobile.svg">
+    <h1 class="visually hidden" lang="en">CAT ENERGY</h1>
+    <header class="header">
+      <a class="header__logo logo">
+        <img class="logo__img" width="33" height="37" alt="Наш маскот." src="img/icon/logo_mobile.svg">
       </a>
-      <a class="header__logo-main logo-main__link" href="#">
+      <a class="header__logo-main logo-main">
         <img class="logo-main__img" width="101" height="18" alt="Логотип «Кэт Энерджи»." src="img/icon/logo_main.svg">
       </a>
-      <button class="main-header__toggle" type="button"></button>
-      <div class="main-header__popover popover__menu">
-        <button class="menu__button-close" type="button">
-          <span class="visually-hidden">Закрыть.</span>
-        </button>
-        <div class="menu__content">
-          <ul class="menu__content-list">
-            <li class="menu__content-item">
-              <a class="menu__content-link" href="index.html">Главная</a>
-            </li>
-            <li class="menu__content-item">
-              <a class="menu__content-link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="menu__content-item">
-              <a class="menu__content-link">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <button class="header__toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        Открыть меню
+      </button>
+      <nav class="header__popover menu" id="main-nav">
+        <ul class="menu__content-list">
+          <li class="menu__content-item">
+            <a class="menu__content-link" href="index.html">Главная</a>
+           </li>
+          <li class="menu__content-item">
+            <a class="menu__content-link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="menu__content-item">
+            <a class="menu__content-link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section class="section__form">
+      <section class="form">
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="form__filter" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="form__filter filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter__about">
             <label class="filter__about-label" for="name">Имя:*</label>
             <input class="filter__about-field" type="text" name="name" id="name" placeholder="Барсик" required>
@@ -90,7 +87,7 @@
             <input class="filter__checkbox-field" type="checkbox" name="vitamins" id="vitamins">
             <label class="filter__checkbox-label" for="vitamins">Витамины</label>
           </fieldset>
-          <button class="filter__button" type="submit">Отправить заявку</button>
+          <button class="filter__button button" type="submit">Отправить заявку</button>
         </form>
         <p class="form__meta">* — Обязательные поля</p>
       </section>
