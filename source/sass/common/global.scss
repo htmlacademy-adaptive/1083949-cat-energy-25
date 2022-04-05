@@ -1,0 +1,28 @@
+$color-white: #ffffff;
+$color-dark-grey: #444444;
+$color-basic-green: #68b738;
+$color-black: #000000;
+$color-background: rgba(104, 183, 56, 0.85);
+
+body {
+  margin: 0 auto;
+  min-height: 100%;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-dark-grey;
+  background-color: $color-white;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

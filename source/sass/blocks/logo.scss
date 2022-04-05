@@ -1,0 +1,13 @@
+.logo {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &:hover &__img {
+    opacity: 0.8;
+  }
+
+  &:focus &__img {
+    opacity: 0.6;
+  }
+}

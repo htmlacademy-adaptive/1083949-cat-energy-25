@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+@import "common/global.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/header__logo.scss";
+@import "blocks/logo-main.scss";
+@import "blocks/header__toggle.scss";
+@import "blocks/header__popover";
+@import "blocks/menu.scss";
+@import "blocks/menu__content-list.scss";
+@import "blocks/menu__content-item.scss";
+@import "blocks/menu__content-link.scss";
+@import "blocks/promo.scss";
+@import "blocks/promo__title.scss";
+@import "blocks/promo__text.scss";
+@import "blocks/promo__img";
+@import "blocks/promo__link-button.scss";
+@import "blocks/promo__list";
+@import "blocks/promo__item.scss";
+
