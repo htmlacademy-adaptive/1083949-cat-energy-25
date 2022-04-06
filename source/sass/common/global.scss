@@ -2,9 +2,30 @@ $color-white: #ffffff;
 $color-dark-grey: #444444;
 $color-basic-green: #68b738;
 $color-black: #000000;
+$color-light-black: #111111;
 $color-background: rgba(104, 183, 56, 0.85);
+$color-basic-grey: #f2f2f2;
+$color-grey: #eaeaea;
+$color-border-grey: #d9d9d9;
+
+@font-face {
+  font-family: "Oswald";
+  src: url("/fonts/oswaldmedium.woff2") format("woff2");
+  src: url("/fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("/fonts/oswaldregular.woff2") format("woff2");
+  src: url("/fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
+  width: 320px;
   margin: 0 auto;
   min-height: 100%;
   font-family: "Arial", sans-serif;
