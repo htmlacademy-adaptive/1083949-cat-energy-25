@@ -4,12 +4,12 @@
   height: 18px;
   padding: 0;
   margin: 0;
+}
 
-  &:hover  &__img {
-    opacity: 0.8;
-  }
+.logo-main:hover .logo-main__img {
+  opacity: 0.8;
+}
 
-  &:focus &__img {
-    opacity: 0.6;
-  }
+.logo-main:focus .logo-main__img {
+  opacity: 0.6;
 }
