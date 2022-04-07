@@ -1,10 +1,11 @@
 @import "common/global.scss";
 @import "blocks/header.scss";
+@import "blocks/header__flex-wrapper.scss";
 @import "blocks/logo.scss";
 @import "blocks/header__logo.scss";
 @import "blocks/logo-main.scss";
 @import "blocks/header__toggle.scss";
-@import "blocks/header__popover";
+@import "blocks/header__popover.scss";
 @import "blocks/menu.scss";
 @import "blocks/menu__content-list.scss";
 @import "blocks/menu__content-item.scss";
@@ -53,4 +54,10 @@
 @import "blocks/footer__socials.scss";
 @import "blocks/socials__list.scss";
 @import "blocks/socials__link.scss";
+@import "blocks/footer__logo-academy.scss";
+@import "blocks/logo-academy__link-academy.scss";
 
+// catalog
+@import "blocks/catalog.scss";
+@import "blocks/catalog__title.scss";
+@import "blocks/catalog__list.scss";
