@@ -1,0 +1,46 @@
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 13px;
+}
+
+.card__list-description {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-dark-grey;
+}
+
+.card__link {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  text-decoration: none;
+  color: $color-dark-grey-2;
+  max-width: 76px;
+}
+
+.card__link-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-dark-grey-2;
+}
+
+.card__link-img {
+  padding: 11px 28px 0;
+}
+
+.card__img {
+  width: 68px;
+  height: 78px;
+}

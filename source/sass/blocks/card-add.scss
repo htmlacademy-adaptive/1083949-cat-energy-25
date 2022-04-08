@@ -1,3 +1,10 @@
+.card-add__weight {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  line-height: 14px;
+}
+
 .card-add__title {
   margin: 0;
   padding: 0;
@@ -8,4 +15,12 @@
   line-height: 16px;
   color: $color-dark-grey-2;
   text-transform: uppercase;
+}
+
+.card-add__price {
+  margin: 0;
+  padding: 0;
+  line-height: 14px;
+  text-align: right;
+  color: $color-dark-grey;
 }

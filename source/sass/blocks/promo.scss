@@ -7,3 +7,43 @@
   margin: 0;
   padding: 0;
 }
+
+.promo__title {
+  margin: 0;
+  padding: 27px 10px 25px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-white;
+  text-align: center;
+}
+
+.promo__text {
+  margin: 0;
+  padding: 0 40px 164px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.promo__link-button {
+  color: $color-white;
+  background-color: $color-basic-green;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px 44px;
+}
+
+.promo__background-wrapper {
+  margin-bottom: 138px;
+  background-color: $color-basic-green;
+  background-image: url("../img/promo_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

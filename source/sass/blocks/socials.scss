@@ -4,3 +4,7 @@
   padding: 0;
   list-style-type: none;
 }
+
+.socials__link:not(:nth-child(3)) {
+  margin-right: 24px;
+}
