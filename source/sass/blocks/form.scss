@@ -4,7 +4,7 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 112%;
   color: $color-dark-grey;
 }
 
@@ -15,7 +15,7 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 100%;
   color: $color-black;
 }
 
@@ -24,7 +24,7 @@
   padding: 0 0 39px;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 129%;
   text-transform: uppercase;
   color: $color-black;
 }
@@ -32,7 +32,7 @@
 .form__meta {
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 114%;
   color: $color-black;
   text-align: center;
 }
