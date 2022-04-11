@@ -2,22 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
     <h1 class="visually-hidden" lang="en">CAT ENERGY</h1>
-    <header class="header header__flex-wrapper">
-      <a class="header__logo logo">
-        <img class="logo__img" width="33" height="37" alt="Наш маскот." src="img/icon/logo_mobile.svg">
-      </a>
-      <a class="header__logo-main logo-main">
-        <img class="logo-main__img" width="101" height="18" alt="Логотип «Кэт Энерджи»." src="img/icon/logo_main.svg">
-      </a>
-      <button class="header__toggle" type="button" aria-expanded="false" aria-controls="main-nav">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <header class="header">
+      <div class=" header__flex-wrapper">
+        <a class="header__logo logo">
+          <img class="logo__img" width="33" height="37" alt="Наш маскот." src="img/icon/logo_mobile.svg">
+        </a>
+        <a class="header__logo-main logo-main">
+          <img class="logo-main__img" width="101" height="18" alt="Логотип «Кэт Энерджи»." src="img/icon/logo_main.svg">
+        </a>
+        <a class="header__logo-alternative logo-alternative">
+          <img class="logo__img--secondary" width="174" height="52" alt="Логотип «Кэт Энерджи»." src="img/icon/icon_logo_tablet.svg">
+        </a>
+        <button class="header__toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <nav class="header__popover menu" id="main-nav">
         <ul class="menu__content-list">
           <li class="menu__content-item">

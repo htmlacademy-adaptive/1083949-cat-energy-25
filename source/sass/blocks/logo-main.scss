@@ -13,3 +13,9 @@
 .logo-main:focus .logo-main__img {
   opacity: 0.6;
 }
+
+@media (min-width: $tablet-width) {
+  .logo-main {
+    display: none;
+  }
+}

@@ -2,6 +2,7 @@
 @import "common/fonts.scss";
 @import "common/variable.scss";
 @import "common/global.scss";
+@import "common/viewports.scss";
 
 // visually-hidden
 @import "blocks/visually-hidden.scss";
@@ -10,6 +11,7 @@
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/logo-main.scss";
+@import "blocks/logo-alternative.scss";
 @import "blocks/menu.scss";
 @import "blocks/promo.scss";
 @import "blocks/programs.scss";

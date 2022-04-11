@@ -1,0 +1,9 @@
+.logo-alternative {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-alternative {
+    display: block;
+  }
+}

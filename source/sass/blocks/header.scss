@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 20px 17px;
+  padding: 10px 0 17px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -15,12 +15,31 @@
 }
 
 .header__popover {
-  display: none;
-  width: 320px;
-  height: 264px;
+  // display: none;
+  // width: 320px;
+  height: 204px;
 }
 
 .header__flex-wrapper {
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .header__flex-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  // .header__popover {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: flex-end;
+  // }
+
+  .header__toggle {
+    display: none;
+  }
 }
