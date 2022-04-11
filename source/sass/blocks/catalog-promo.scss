@@ -1,0 +1,22 @@
+.catalog-promo {
+  margin: 35px 20px;
+  padding: 0;
+  background-color: $color-basic-green;
+  background-image: url("../img/catalog_background.jpg");
+}
+
+.catalog-promo__text {
+  margin: 0;
+  padding: 0 61px 43px 58px;
+  color: $color-white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.catalog-promo__icon {
+  padding: 58px 101px 48px;
+  width: 78px;
+  height: 80px;
+  text-align: center;
+}

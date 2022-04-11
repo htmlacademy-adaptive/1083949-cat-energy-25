@@ -1,0 +1,32 @@
+.catalog {
+  margin: 0;
+  padding: 27px 0 25px;
+  border-top: 1px solid $color-border-catalog;
+  border-bottom: 1px solid $color-border-catalog;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0 20px 41px;
+  border-bottom: 1px solid $color-border-catalog;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: $color-black;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog__card {
+  margin: 0;
+  margin-top: 8px;
+  padding: 11px 18px 25px 20px;
+}

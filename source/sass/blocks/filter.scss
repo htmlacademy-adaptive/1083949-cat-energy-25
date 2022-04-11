@@ -1,0 +1,136 @@
+.filter__about {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 11px;
+  border: none;
+}
+
+.filter__about-label {
+  margin: 0;
+  padding: 0;
+  padding-left: 13px;
+}
+
+.filter__about-field {
+  margin: 0 0 13px;
+  padding: 13px 15px;
+  border: 1px solid $color-border-form;
+  appearance: none;
+}
+
+.filter__radio {
+  margin: 0;
+  padding: 22px 20px 19px;
+  border: none;
+}
+
+.filter__radio-label {
+  margin: 0;
+  padding: 0;
+  padding-left: 45px;
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter__item {
+  padding-bottom: 13px;
+}
+
+.filter__contacts {
+  margin: 0;
+  padding: 26px 20px 23px;
+  border: none;
+}
+
+.filter__contacts-subtitle {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 108%;
+  color: $color-black;
+}
+
+.filter__contacts-label {
+  margin: 0;
+  padding: 0;
+  padding-right: 11px;
+}
+
+.filter__contacts-field {
+  margin: 0 0 13px;
+  padding: 13px 15px;
+  border: 1px solid $color-border-form;
+  appearance: none;
+}
+
+.filter__comment {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 22px;
+  border: none;
+}
+
+.filter__comment-subtitle {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 108%;
+  color: $color-black;
+}
+
+.filter__comment-label {
+  margin: 0;
+  padding: 0;
+}
+
+.filter__comment-field {
+  margin: 0;
+  padding: 13px 15px;
+  min-height: 150px;
+  border: 1px solid $color-border-form;
+  appearance: none;
+}
+
+.filter__checkbox {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 11px;
+  border: none;
+}
+
+.filter__checkbox-subtitle {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 108%;
+  color: $color-black;
+}
+
+.filter__checkbox-label {
+  margin: 0;
+  padding: 0;
+  padding-left: 44px;
+  padding-bottom: 13px;
+}
+
+.filter__checkbox-field {
+  margin: 0;
+  padding: 0;
+}
+
+.filter__button {
+  margin-bottom: 21px;
+  padding: 7px 44px;
+}

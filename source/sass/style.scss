@@ -1,1 +1,36 @@
-// Начните писать стили здесь
+// common
+@import "common/fonts.scss";
+@import "common/variable.scss";
+@import "common/global.scss";
+
+// visually-hidden
+@import "blocks/visually-hidden.scss";
+
+// index
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/logo-main.scss";
+@import "blocks/menu.scss";
+@import "blocks/promo.scss";
+@import "blocks/programs.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/toggle.scss";
+@import "blocks/address.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials.scss";
+@import "blocks/logo-academy.scss";
+
+// catalog
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
+@import "blocks/list-description.scss";
+@import "blocks/button.scss";
+@import "blocks/pagination.scss";
+@import "blocks/catalog-add.scss";
+@import "blocks/card-add.scss";
+@import "blocks/catalog-promo.scss";
+
+// form
+@import "blocks/form.scss";
+@import "blocks/filter.scss";

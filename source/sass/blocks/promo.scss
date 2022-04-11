@@ -1,0 +1,58 @@
+.promo {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: $color-white;
+  text-align: center;
+}
+
+.promo__text {
+  margin: 0;
+  padding: 0 40px 164px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.promo__link-button {
+  display: flex;
+  justify-content: center;
+  color: $color-white;
+  background-color: $color-basic-green;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  padding: 11px 44px;
+  margin: 0 20px;
+}
+
+.promo__background-wrapper {
+  padding: 27px 0 0;
+  background-color: $color-basic-green;
+  background-image: url("../img/promo_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.promo__img {
+  padding: 0 20px;
+}

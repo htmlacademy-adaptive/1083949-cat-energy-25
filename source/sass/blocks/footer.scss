@@ -1,0 +1,23 @@
+.footer {
+  padding: 0 20px;
+  background-color: $color-basic-grey;
+}
+
+.footer__socials {
+  padding: 20px 74px;
+  border-top: 1px solid $color-border-grey;
+  border-bottom: 1px solid $color-border-grey;
+}
+
+.footer__logo {
+  padding: 39px 76px 32px;
+}
+
+.footer__logo-academy {
+  padding: 28px 20px 32px;
+}
+
+.footer__link {
+  display: inline-block;
+  opacity: 0.28;
+}
