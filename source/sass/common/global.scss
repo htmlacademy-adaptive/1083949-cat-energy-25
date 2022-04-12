@@ -11,8 +11,3 @@ body {
   background-color: $color-white;
 }
 
-@media (min-width: $tablet-width) {
-  body {
-    min-width: 768px;
-  }
-}
