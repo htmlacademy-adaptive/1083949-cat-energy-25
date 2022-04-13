@@ -3,12 +3,12 @@
 @import "common/variable.scss";
 @import "common/global.scss";
 @import "common/viewports.scss";
+@import "common/container.scss";
 
 // visually-hidden
 @import "blocks/visually-hidden.scss";
 
 // index
-@import "blocks/container.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/logo-main.scss";

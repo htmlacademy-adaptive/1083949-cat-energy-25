@@ -82,7 +82,7 @@
 
 @media (min-width: $tablet-width) {
   .programs {
-    width: 708px;
+    width: auto;
   }
 
   .programs__item {
@@ -135,6 +135,6 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    width: 1220px;
+    width: auto;
   }
 }
