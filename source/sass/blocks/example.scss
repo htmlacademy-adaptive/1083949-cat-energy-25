@@ -11,6 +11,10 @@
   margin-bottom: 15px;
 }
 
+.example__img-slider {
+  display: none;
+}
+
 .example__total {
   margin: 0;
   margin-bottom: 40px;
@@ -42,13 +46,20 @@
 }
 
 .example__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
   list-style-type: none;
 }
 
-.example__list-value {
+.example__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.example__item-value {
+  display: block;
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
@@ -58,10 +69,131 @@
   color: $color-black;
 }
 
-.example__list-key {
+.example__item-key {
+  display: block;
   margin: 0;
   padding: 0;
   font-size: 12px;
   line-height: 100%;
   color: $color-dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    width: 100%;
+    padding: 43px 0 56px;
+    background-color: $color-white;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 100%;
+    color: $color-black;
+    margin-bottom: 63px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 54px;
+  }
+
+  .example__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 250px;
+  }
+
+  .example__list {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .flex-item {
+    margin-right: 42px;
+  }
+
+  .example__item-key {
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  .example__item-value {
+    font-size: 30px;
+    line-height: 123%;
+  }
+
+  .example__total {
+    max-width: 180px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .example__img {
+    display: none;
+  }
+
+  .example__img-slider {
+    display: flex;
+    background-color: $color-grey;
+  }
+
+  .toggle__label {
+    font-size: 20px;
+    line-height: 150%;
+    border-bottom: 1px dashed $color-black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    width: auto;
+    padding-top: 43px;
+  }
+
+  .example__wrapper {
+    display: flex;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 76px;
+  }
+
+  .example__background-wrapper {
+    background-color: $color-grey;
+  }
+
+  .example__text {
+    padding: 70px 110px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .example__flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .example__list {
+    padding: 0 110px 55px;
+  }
+
+  .example__item {
+    margin: 42px;
+  }
+
+  .example__total {
+    padding: 0 110px;
+    min-width: 366px;
+    text-align: center;
+  }
+
+  .example__wrapper-img {
+    margin-bottom: 0;
+  }
 }

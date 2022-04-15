@@ -39,6 +39,7 @@
 }
 
 .programs__item-subtitle {
+  white-space: nowrap;
   margin: 0 0 20px 71px;
   padding: 9px 0;
   font-family: "Oswald", sans-serif;
@@ -83,6 +84,7 @@
 @media (min-width: $tablet-width) {
   .programs {
     width: auto;
+    margin-bottom: 25px;
   }
 
   .programs__item {
@@ -136,5 +138,42 @@
 @media (min-width: $desktop-width) {
   .programs {
     width: auto;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    max-width: 570px;
+    padding: 77px 51px 55px 52px;
+  }
+
+  .programs__item:not(:last-child) {
+    margin-right: 80px;
+  }
+
+  .programs__item--slim::before {
+    width: 100px;
+    height: 106px;
+    top: 41px;
+    left: 52px;
+  }
+
+  .programs__item--pro::before {
+    width: 134px;
+    height: 100px;
+    top: 47px;
+    left: 33px;
+  }
+
+  .programs__item-subtitle {
+    margin: 0 0 73px 214px;
+  }
+
+  .programs__item-text {
+    max-width: 467px;
+    margin-bottom: 23px;
   }
 }
