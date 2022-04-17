@@ -35,12 +35,15 @@
   margin-bottom: 24px;
 }
 
-.advantages__icon-4::before {
+.advantages__icon::before {
   position: absolute;
   left: 0;
   content: " ";
   width: 60px;
   height: 60px;
+}
+
+.advantages__icon-4::before {
   background-color: $color-basic-green;
   background-image: url("/img/icon/icon_alarm.svg");
   background-repeat: no-repeat;
@@ -48,11 +51,6 @@
 }
 
 .advantages__icon-3::before {
-  position: absolute;
-  left: 0;
-  content: " ";
-  width: 60px;
-  height: 60px;
   background-color: $color-basic-green;
   background-image: url("../img/icon/icon_eat.svg");
   background-repeat: no-repeat;
@@ -60,11 +58,6 @@
 }
 
 .advantages__icon-2::before {
-  position: absolute;
-  left: 0;
-  content: " ";
-  width: 60px;
-  height: 60px;
   background-color: $color-basic-green;
   background-image: url("../img/icon/icon_tub.svg");
   background-repeat: no-repeat;
@@ -72,13 +65,79 @@
 }
 
 .advantages__icon-1::before {
-  position: absolute;
-  left: 0;
-  content: " ";
-  width: 60px;
-  height: 60px;
   background-color: $color-basic-green;
   background-image: url("../img/icon/icon_leaf.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: auto;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-border-advantages;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 32px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    counter-reset: advantages;
+  }
+
+  .advantages__item {
+    position: relative;
+    min-width: 230px;
+    max-width: 250px;
+    margin-bottom: 94px;
+  }
+
+  .advantages__item::after {
+    position: absolute;
+    left: 87px;
+    z-index: -2;
+    counter-increment: advantages;
+    content: counter(advantages);
+    color: $color-grey;
+    font-size: 280px;
+    line-height: 100%;
+  }
+
+  .advantages__icon::before {
+    top: -111px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .advantages__text {
+    margin-top: 151px;
+    display: inline-block;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: auto;
+    padding-bottom: 0;
+    margin-bottom: 26px;
+    border: none;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .advantages__item {
+    margin-right: 50px;
+  }
 }

@@ -1,5 +1,5 @@
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   min-height: 100%;
   font-family: "Arial", sans-serif;
@@ -10,3 +10,4 @@ body {
   color: $color-dark-grey;
   background-color: $color-white;
 }
+
