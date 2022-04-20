@@ -1,7 +1,6 @@
 .header {
-  width: 100%;
+  width: auto;
   padding: 10px 0 17px;
-  margin: 0 auto;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -48,19 +47,20 @@
 @media (min-width: $desktop-width) {
   .header {
     margin: 0;
-    margin-bottom: 82px;
+    margin-bottom: 10px;
     padding: 0;
     padding-top: 53px;
     width: 100%;
-    background-image: url("../img/promo_background_desktop.png");
-    background-repeat: no-repeat;
-    background-size: auto auto;
-    background-position: top right;
+    background-color: transparent;
+    // background-image: url("../img/promo_background_desktop.png");
+    // background-repeat: no-repeat;
+    // background-size: auto auto;
+    // background-position: top right;
   }
 
   .header-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
