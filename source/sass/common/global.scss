@@ -20,28 +20,3 @@ body {
 *::after {
   box-sizing: border-box;
 }
-
-@media (min-width: $desktop-width) {
-  body {
-    background-image: linear-gradient(to bottom, $color-basic-green $height-desktop-bg, $color-white $height-desktop-bg);
-    background-repeat: no-repeat;
-    background-size: 50% $height-desktop-bg;
-    background-position: top right;
-    position: relative;
-    z-index: 0;
-
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      z-index: -1;
-      content: " ";
-      width: 50%;
-      height: $height-desktop-bg;
-      background-image: url("/img/promo_background_desktop.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: right;
-    }
-  }
-}

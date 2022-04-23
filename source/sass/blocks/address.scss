@@ -1,13 +1,18 @@
 .address {
-  width: auto;
+  width: 100%;
   margin: 0;
-  padding: 26px 0;
+  padding: 0;
   color: $color-dark-grey;
 }
 
 .address-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.address-wrapper--catalog {
+  background-color: $color-basic-grey;
+  padding-top: 26px;
 }
 
 .address__flex-wrapper {
@@ -36,13 +41,13 @@
 
 .address__map {
   margin-top: 26px;
-  width: auto;
+  width: 100%;
   flex-grow: 1;
 }
 
-@media (min-width: $tablet-width) { //карту надо растянуть
+@media (min-width: $tablet-width) {
   .address {
-    width: auto;
+    width: 100%;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -52,16 +57,39 @@
     padding: 0;
   }
 
+  .address-wrapper--form {
+    background-color: $color-basic-grey;
+  }
+
+  .address-wrapper--form .address__flex-wrapper {
+    padding: 56px 40px;
+  }
+
+  .address-wrapper--form .address__link {
+    display: inline-block;
+    text-align: right;
+  }
+
   .address__flex-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 56px 70px;
   }
+
+  .address__title {
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .address__link {
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .address {
-    width: auto;
+    width: 100%;
     padding: 0;
   }
 
@@ -90,7 +118,7 @@
   }
 
   .address__map {
-    width: auto;
+    width: 100%;
     text-align: center;
     margin: 0;
   }

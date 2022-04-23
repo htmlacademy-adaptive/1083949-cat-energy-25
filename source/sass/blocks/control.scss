@@ -1,0 +1,67 @@
+.control {
+  position: relative;
+  display: block;
+}
+
+.control__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-special-grey;
+}
+
+.control:hover .control__mark {
+  border-color: $color-form-hover;
+}
+
+.control__field:disabled + .control__mark {
+  opacity: 0.3;
+}
+
+.control__field[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__field[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  background-color: $color-basic-green;
+  border-radius: 50%;
+  content: "";
+}
+
+.control__label {
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .control__mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-special-grey;
+  }
+
+  .control__label {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .control__field[type="radio"]:checked + .control__mark::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    background-color: $color-basic-green;
+    border-radius: 50%;
+    content: "";
+  }
+}

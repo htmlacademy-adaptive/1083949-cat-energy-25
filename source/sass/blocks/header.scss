@@ -24,6 +24,7 @@
 @media (min-width: $tablet-width) {
   .header {
     width: 100%;
+    padding: 24px 0 64px;
   }
 
   .header-wrapper {
@@ -46,16 +47,11 @@
 
 @media (min-width: $desktop-width) {
   .header {
+    width: 100%;
     margin: 0;
     margin-bottom: 10px;
-    padding: 0;
-    padding-top: 53px;
-    width: 100%;
+    padding: 54px 0 64px;
     background-color: transparent;
-    // background-image: url("../img/promo_background_desktop.png");
-    // background-repeat: no-repeat;
-    // background-size: auto auto;
-    // background-position: top right;
   }
 
   .header-wrapper {

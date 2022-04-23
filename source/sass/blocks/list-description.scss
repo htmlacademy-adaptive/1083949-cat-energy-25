@@ -1,3 +1,14 @@
+.list-description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.list-description__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .list-description__value {
   margin: 0;
   padding: 0;

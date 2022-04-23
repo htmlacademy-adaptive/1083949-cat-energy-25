@@ -1,11 +1,13 @@
 .form {
+  width: 100%;
   margin: 0;
-  padding: 27px 20px 0;
+  padding: 27px 0 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 112%;
   color: $color-dark-grey;
+  border-top: 1px solid $color-border-grey;
 }
 
 .form__title {
@@ -35,4 +37,52 @@
   line-height: 114%;
   color: $color-black;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 0;
+    border: none;
+  }
+
+  .form__title {
+    font-size: 60px;
+    line-height: 100%;
+    color: $color-black;
+    padding: 0 39px;
+    margin-bottom: 54px;
+  }
+
+  .form__text {
+    font-size: 20px;
+    line-height: 150%;
+    padding: 0 40px;
+    margin-bottom: 66px;
+    max-width: 463px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 100%;
+  }
+
+  .form__title {
+    padding-left: 0;
+  }
+
+  .form__text {
+    padding-left: 0;
+  }
+
+  .filter__about-field {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    margin-bottom: 82px;
+  }
 }

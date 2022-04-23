@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.pagination__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .pagination__text {
   margin: 0;
   padding: 0;
@@ -23,4 +28,22 @@
   line-height: 133%;
   color: $color-dark-grey;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .pagination {
+    margin: 0;
+    margin-top: 81px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination {
+    margin: 0;
+    margin-top: 81px;
+  }
+
+  .pagination__button {
+    padding: 20px 39px;
+  }
 }
