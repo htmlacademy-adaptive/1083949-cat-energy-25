@@ -1,6 +1,6 @@
 .footer {
   width: auto;
-  padding: 0 20px;
+  padding: 0;
   background-color: $color-basic-grey;
 }
 
@@ -12,11 +12,15 @@
 }
 
 .footer__logo {
-  padding: 39px 76px 32px;
+  display: flex;
+  justify-content: center;
+  padding: 39px 0 32px;
 }
 
 .footer__logo-academy {
-  padding: 28px 20px 32px;
+  padding: 28px 0 32px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__link {
@@ -27,10 +31,10 @@
 @media (min-width: $tablet-width) {
   .footer {
     width: auto;
+    padding: 56px;
   }
 
   .footer-wrapper {
-    padding: 58px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,6 +1,6 @@
 .advantages {
   margin-bottom: 49px;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .advantages__title {
@@ -73,7 +73,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    width: auto;
+    width: 100%;
     margin-bottom: 0;
     padding-bottom: 10px;
     border-bottom: 1px solid $color-border-advantages;
@@ -126,7 +126,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    width: auto;
+    width: 100%;
     padding-bottom: 0;
     margin-bottom: 26px;
     border: none;

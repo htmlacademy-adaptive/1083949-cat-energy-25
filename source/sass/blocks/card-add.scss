@@ -1,7 +1,10 @@
+.card-add {
+  width: 100%;
+}
+
 .card-add__weight {
   margin: 0;
   padding: 0;
-  padding-bottom: 15px;
   line-height: 14px;
 }
 
@@ -23,4 +26,86 @@
   line-height: 100%;
   text-align: right;
   color: $color-dark-grey;
+}
+
+.card-add__wrapper {
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-add__button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-add__button {
+  min-width: 282px;
+}
+
+@media (min-width: $tablet-width) {
+  .card-add {
+    width: 100%;
+  }
+
+  .card-add__title {
+    padding: 0;
+    font-size: 20px;
+    line-height: 100%;
+    color: $color-dark-grey-2;
+  }
+
+  .card-add__container {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-add__wrapper {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-add__weight {
+    text-align: left;
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  .card-add__price {
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  .card-add__button-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-add {
+    width: 100%;
+  }
+
+  .card-add__title {
+    padding: 0;
+  }
+
+  .card-add__container {
+    padding: 0;
+    min-width: 244px;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .card-add__wrapper {
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-bottom: 0;
+  }
 }
