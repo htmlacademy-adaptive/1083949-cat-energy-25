@@ -6,6 +6,7 @@
 
 .example__wrapper-img {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .example__img {
@@ -32,7 +33,7 @@
 .example__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -50,9 +51,16 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
   padding: 0;
   list-style-type: none;
+}
+
+.example__item {
+  position: relative;
+  max-width: 124px;
+  border: 1px solid $color-special-grey;
+  border-radius: 3px;
 }
 
 .example__item:not(:last-child) {
@@ -60,9 +68,12 @@
 }
 
 .example__item-value {
-  display: block;
+  display: inline-block;
+  white-space: nowrap;
   margin: 0;
-  padding: 0;
+  padding: 14px 20px 21px;
+  text-align: center;
+  vertical-align: middle;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -71,12 +82,19 @@
 }
 
 .example__item-key {
+  max-width: 77px;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 22px;
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 0 5px;
   font-size: 12px;
   line-height: 100%;
   color: $color-dark-grey;
+  background-color: $color-grey;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -84,14 +102,6 @@
     width: 100%;
     padding: 43px 0 56px;
     background-color: $color-white;
-  }
-
-  .example-wrapper {
-    padding: 0;
-  }
-
-  .example__background-wrapper {
-    padding: 0 30px;
   }
 
   .example__title {
@@ -108,7 +118,9 @@
   }
 
   .example__flex-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    column-gap: 30px;
     justify-content: space-between;
     padding-bottom: 80px;
   }
@@ -118,30 +130,51 @@
     justify-content: flex-start;
   }
 
-  .flex-item {
+  .example__item {
+    min-width: 162px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .example__item:not(:last-child) {
     margin-right: 42px;
   }
 
   .example__item-key {
+    white-space: nowrap;
     font-size: 14px;
     line-height: 100%;
+    background-color: $color-white;
+  }
+
+  .example__item-key--weight {
+    max-width: 114px;
+    padding: 18px 10px;
+  }
+
+  .example__item-key--time {
+    max-width: 145px;
+    padding: 18px 10px;
+    left: 8px;
   }
 
   .example__item-value {
     font-size: 30px;
     line-height: 123%;
+    padding: 15px;
+    padding-bottom: 25px;
   }
 
   .example__total {
-    max-width: 180px;
     text-align: right;
     font-size: 20px;
     line-height: 100%;
   }
 
-  .example__wrapper-img { // надо растянуть фон на padding
-    width: auto;
+  .example__wrapper-img {
+    width: 100%;
     margin: 0;
+    padding: 0 30px;
     padding-bottom: 56px;
     background-color: $color-grey;
     background-image: linear-gradient(to bottom, $color-white $height-tablet-bg, $color-grey $height-tablet-bg);
@@ -157,12 +190,6 @@
   .example__img-slider {
     display: flex;
     justify-content: center;
-  }
-
-  .toggle__label {
-    font-size: 20px;
-    line-height: 150%;
-    border-bottom: 1px dashed $color-black;
   }
 }
 
@@ -203,14 +230,21 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .example__list {
-    padding: 0 110px 55px;
+    padding: 0 110px;
   }
 
   .example__item {
     margin: 42px;
+    margin-left: 0;
+  }
+
+  .example__item-key {
+    background-color: $color-grey;
   }
 
   .example__total {

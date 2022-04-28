@@ -8,6 +8,7 @@
 .address-wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .address-wrapper--catalog {
@@ -17,6 +18,7 @@
 
 .address__flex-wrapper {
   display: flex;
+  padding: 26px 0;
 }
 
 .address__title {
@@ -40,9 +42,10 @@
 }
 
 .address__map {
-  margin-top: 26px;
   width: 100%;
   flex-grow: 1;
+  border: none;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,6 +60,15 @@
     padding: 0;
   }
 
+  .address__link:hover {
+    opacity: 0.6;
+  }
+
+  .address__link:focus {
+    opacity: 0.3;
+ }
+
+
   .address-wrapper--form {
     background-color: $color-basic-grey;
   }
@@ -68,6 +80,7 @@
   .address-wrapper--form .address__link {
     display: inline-block;
     text-align: right;
+    cursor: pointer;
   }
 
   .address__flex-wrapper {

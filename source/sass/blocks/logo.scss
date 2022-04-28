@@ -1,17 +1,10 @@
 .logo {
   display: block;
   margin: 0;
+  margin-right: 57px;
   padding: 0;
   width: 33px;
   height: 37px;
-
-  &:hover &__img {
-    opacity: 0.8;
-  }
-
-  &:focus &__img {
-    opacity: 0.6;
-  }
 }
 
 @media (min-width: $tablet-width) {

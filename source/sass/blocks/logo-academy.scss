@@ -1,6 +1,21 @@
 .logo-academy__link-academy {
+  display: inline-block;
   margin: 0;
   padding: 0;
   text-decoration: none;
   color: $color-dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-academy__link-academy--icon {
+    padding-left: 22px;
+  }
+
+  .footer__logo-academy:hover .logo-academy__icon {
+    stroke: $color-basic-green;
+  }
+
+  .footer__logo-academy:focus {
+    opacity: 0.3;
+  }
 }

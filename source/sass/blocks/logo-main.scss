@@ -1,17 +1,7 @@
 .logo-main {
   display: block;
-  width: 101px;
-  height: 18px;
   padding: 0;
   margin: 0;
-}
-
-.logo-main:hover .logo-main__img {
-  opacity: 0.8;
-}
-
-.logo-main:focus .logo-main__img {
-  opacity: 0.6;
 }
 
 @media (min-width: $tablet-width) {
