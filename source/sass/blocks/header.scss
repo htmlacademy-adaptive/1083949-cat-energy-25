@@ -9,13 +9,8 @@
   background-color: $color-white;
 }
 
-.header__toggle {
-  width: 24px;
-  height: 16px;
-  border: none;
-}
-
 .header__flex-wrapper {
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +18,7 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    width: 100%;
+    width: auto;
     padding: 24px 0 64px;
   }
 
@@ -39,28 +34,43 @@
     justify-content: flex-start;
     padding: 0;
   }
-
-  .header__toggle {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .header {
-    width: 100%;
+    position: relative;
+    width: auto;
     margin: 0;
     margin-bottom: 10px;
     padding: 54px 0 64px;
     background-color: transparent;
   }
 
+  .header--bg {
+    background-image: linear-gradient(to bottom, $color-basic-green $height-desktop-bg, $color-white $height-desktop-bg);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: top right;
+    z-index: 0;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+      content: " ";
+      width: 50%;
+      height: $height-desktop-bg;
+      background-image: url("/img/promo_background_desktop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+    }
+  }
+
   .header-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .header__toggle {
-    display: none;
   }
 }

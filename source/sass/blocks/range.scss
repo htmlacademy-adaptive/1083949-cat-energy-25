@@ -1,0 +1,113 @@
+.range {
+  max-width: 210px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.range__toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.range__toggle-label {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-black;
+}
+
+.range__toggle-slider {
+  display: block;
+  position: relative;
+  width: 86px;
+  height: 14px;
+  background-color: $color-white;
+  border: 1px solid $color-special-grey;
+  border-radius: 6px;
+}
+
+.range__toggle-mark {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 36px;
+  height: 6px;
+  background-color: $color-basic-green;
+  border-radius: 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .range {
+    max-width: 100%;
+    margin: 0 66px;
+  }
+
+  .range__toggle-label {
+    font-size: 20px;
+    line-height: 150%;
+    border-bottom: 1px dotted transparentize($color-black, 0.76);
+  }
+
+  .range__toggle:hover .range__toggle-label {
+    border-bottom: 1px solid transparentize($color-black, 0.6);
+  }
+
+  .range__toggle:focus .range__toggle-label {
+    border: none;
+  }
+
+  .range__scale {
+    position: relative;
+    width: 426px;
+    height: 6px;
+    background-color: $color-special-grey;
+    border-radius: 6px;
+  }
+
+  .range__toggle-wrapper {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 34px;
+    height: 34px;
+  }
+
+  .range__toggle-slider {
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: $color-white;
+    border: 1px solid $color-special-grey;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px transparentize($color-black, 0.16);
+  }
+
+  .range__toggle-mark {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: $color-basic-green;
+    border-radius: 50%;
+  }
+
+  .range__toggle-slider:hover {
+    box-shadow: 0 2px 4px transparentize($color-black, 0.19);
+  }
+
+  .range__toggle-slider:focus {
+    border: 1px solid $color-basic-green;
+    box-shadow: 0 3px 5px transparentize($color-black, 0.2);
+  }
+}
