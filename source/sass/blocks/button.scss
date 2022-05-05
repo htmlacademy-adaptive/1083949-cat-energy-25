@@ -1,18 +1,50 @@
 .button {
+  display: inline-block;
   margin: 0;
   padding: 10px 109px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 129%;
+  line-height: 125%;
   border: none;
   text-transform: uppercase;
+  text-align: center;
   color: $color-white;
   background-color: $color-basic-green;
+  cursor: pointer;
 }
 
 .button--secondary {
   background-color: $color-basic-grey;
   color: $color-dark-grey;
   padding: 10px 94px;
+}
+
+@media (min-width: $tablet-width) {
+  .button:hover {
+    background-color: $color-green-hover;
+  }
+
+  .button:focus {
+    color: transparentize($color-white, 0.3);
+  }
+
+  .button--secondary:hover {
+    background-color: $color-border-catalog;
+  }
+
+  .button--secondary:focus {
+    opacity: 0.3;
+  }
+
+  .button--card {
+    padding: 10px 93px;
+    margin: 0 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    .button--card {
+      padding: 10px 53px;
+    }
+  }
 }

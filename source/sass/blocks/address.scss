@@ -68,19 +68,8 @@
     opacity: 0.3;
   }
 
-
   .address-wrapper--form {
     background-color: $color-basic-grey;
-  }
-
-  .address-wrapper--form .address__flex-wrapper {
-    padding: 56px 40px;
-  }
-
-  .address-wrapper--form .address__link {
-    display: inline-block;
-    text-align: right;
-    cursor: pointer;
   }
 
   .address__flex-wrapper {
@@ -92,11 +81,15 @@
   .address__title {
     font-size: 20px;
     line-height: 130%;
+    padding-right: 160px;
+    text-align: left;
   }
 
   .address__link {
     font-size: 16px;
     line-height: 125%;
+    padding-left: 160px;
+    text-align: right;
   }
 }
 
@@ -113,6 +106,7 @@
   }
 
   .address__flex-wrapper {
+    padding: 56px 80px;
     position: absolute;
     top: 111px;
     left: 110px;
@@ -121,13 +115,19 @@
   }
 
   .address__title {
+    padding: 0;
+    padding-right: 30px;
+    text-align: left;
     font-size: 20px;
     line-height: 130%;
   }
 
   .address__link {
+    text-align: left;
     font-size: 16px;
     line-height: 125%;
+    padding-left: 45px;
+    padding-right: 0;
   }
 
   .address__map {

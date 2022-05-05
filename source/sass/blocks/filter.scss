@@ -5,8 +5,6 @@
 .filter__about {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
   padding-bottom: 24px;
   border: none;
 }
@@ -41,8 +39,8 @@
 }
 
 .filter__radio {
-  margin: 0;
-  padding: 22px 0 19px;
+  padding-top: 22px;
+  padding-bottom: 19px;
   border: none;
 }
 
@@ -64,22 +62,48 @@
 }
 
 .filter__contacts {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  width: 100%;
   margin: 0;
   margin-top: 26px;
   padding: 0 0 23px;
   border: none;
 }
 
+.filter__decoration {
+  position: relative;
+}
+
+.filter__decoration::before {
+  position: absolute;
+  top: 50%;
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: $color-basic-green;
+  z-index: -1;
+}
+
+.filter__decoration-container {
+  display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
 .filter__contacts-subtitle {
+  display: inline-block;
   margin: 0;
-  padding: 0;
-  padding-bottom: 35px;
+  padding: 0 20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 108%;
   color: $color-black;
+  background-color: $color-white;
+}
+
+.filter__contacts-container {
+  margin-top: 35px;
 }
 
 .filter__contacts-wrapper {
@@ -114,13 +138,13 @@
   color: $color-dark-grey;
 }
 
-// .filter__contacts-icon {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-// }
+.filter__contacts-icon {
+  position: absolute;
+  right: 35px;
+}
 
 .filter__comment {
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-bottom: 22px;
@@ -128,13 +152,14 @@
 }
 
 .filter__comment-subtitle {
+  display: inline-block;
   margin: 0;
-  padding: 0;
-  padding-bottom: 37px;
+  padding: 0 20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 108%;
   color: $color-black;
+  background-color: $color-white;
 }
 
 .filter__comment-label {
@@ -145,6 +170,7 @@
 .filter__comment-field {
   width: 100%;
   margin: 0;
+  margin-top: 37px;
   padding: 0 15px;
   min-height: 150px;
   border: 1px solid $color-border-form;
@@ -162,6 +188,7 @@
 }
 
 .filter__checkbox {
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-bottom: 11px;
@@ -169,19 +196,19 @@
 }
 
 .filter__checkbox-subtitle {
+  display: inline-block;
   margin: 0;
-  padding: 0;
-  padding-bottom: 34px;
+  padding: 0 20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 108%;
   color: $color-black;
+  background-color: $color-white;
 }
 
 .filter__checkbox-list {
-  margin: 0;
-  padding: 0;
   list-style: none;
+  margin-top: 34px;
 }
 
 .filter__checkbox-item {
@@ -221,6 +248,7 @@
 
   .filter__about-wrapper {
     margin-bottom: 20px;
+    padding: 0 37px 0 40px;
   }
 
   .filter__about-label {
@@ -250,6 +278,7 @@
   }
 
   .filter__radio-list {
+    margin: 0 37px 0 40px;
     padding: 25px;
     border: 1px solid $color-border-form;
   }
@@ -258,19 +287,34 @@
     font-size: 20px;
     line-height: 150%;
     margin-bottom: 13px;
-    padding-left: 85px;
+    padding-left: 59px;
   }
 
   .filter__contacts {
     width: 100%;
     margin-bottom: 65px;
+    padding-bottom: 0;
+  }
+
+  .filter__decoration-container {
+    margin: 0 30px;
   }
 
   .filter__contacts-subtitle {
+    display: inline-block;
+    max-width: 100%;
     font-size: 36px;
     line-height: 100%;
-    margin-bottom: 76px;
-    padding: 0 39px;
+    margin-bottom: 0;
+    padding: 0 40px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .filter__contacts-container {
+    margin-top: 76px;
   }
 
   .filter__contacts-wrapper {
@@ -289,6 +333,11 @@
     line-height: 150%;
   }
 
+  .filter__contacts-icon {
+    position: absolute;
+    right: 84px;
+  }
+
   .filter__contacts-field::placeholder {
     font-size: 20px;
     line-height: 100%;
@@ -297,18 +346,21 @@
   .filter__comment {
     width: 100%;
     margin-bottom: 65px;
-    padding: 0 39px;
   }
 
   .filter__comment-subtitle {
     font-size: 36px;
     line-height: 100%;
-    margin-bottom: 76px;
+    margin-bottom: 0;
+    padding: 0 40px;
+  }
+
+  .filter__comment .container {
+    padding: 0 70px;
   }
 
   .filter__comment-field {
-    width: 100%;
-    margin: 0;
+    margin-top: 76px;
     padding: 10px 19px;
   }
 
@@ -320,19 +372,20 @@
 
   .filter__checkbox {
     width: 100%;
-    padding: 0 40px;
   }
 
   .filter__checkbox-subtitle {
+    padding: 0 40px;
     font-size: 36px;
     line-height: 100%;
-    margin-bottom: 57px;
   }
 
   .filter__checkbox-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 57px;
     margin-bottom: 22px;
+    padding: 0 70px;
   }
 
   .filter__checkbox-item {
@@ -373,6 +426,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
     margin-bottom: 65px;
+    padding: 0 110px;
   }
 
   .filter__border {
@@ -380,17 +434,29 @@
   }
 
   .filter__about {
-    width: 100%;
+    min-width: calc(50% - 110px);
     padding: 0;
     margin: 0;
     grid-column: 1 / 2;
   }
 
+  .filter__about-wrapper {
+    padding: 0;
+  }
+
   .filter__radio {
-    width: 100%;
+    min-width: calc(50% - 110px);
     padding: 0;
     margin: 0;
     grid-column: 2 / 3;
+  }
+
+  .filter__radio-list {
+    margin: 0;
+  }
+
+  .filter__decoration-container {
+    margin: 0 70px;
   }
 
   .filter__contacts {
@@ -413,12 +479,25 @@
   }
 
   .filter__contacts-subtitle {
-    padding-left: 0;
+    padding: 0 40px;
   }
 
   .filter__contacts-field {
     font-size: 20px;
     line-height: 150%;
+  }
+
+  .filter__contacts-email {
+    position: relative;
+  }
+
+  .filter__contacts-icon {
+    position: absolute;
+    right: 22px;
+  }
+
+  .filter__contacts-tel {
+    position: relative;
   }
 
   .filter__comment {
@@ -427,7 +506,11 @@
   }
 
   .filter__comment-subtitle {
-    padding: 0;
+    padding: 0 40px;
+  }
+
+  .filter__comment .container {
+    padding: 0 110px;
   }
 
   .filter__checkbox {
@@ -435,12 +518,16 @@
     padding-left: 0;
   }
 
+  .filter__checkbox-list {
+    padding: 0 110px;
+  }
+
   .filter__checkbox-item {
     width: calc(100% / 4);
   }
 
   .filter__button {
-    padding: 13px 188px;
+    padding: 14px 188px;
     margin-right: 81px;
     margin-left: 0;
   }

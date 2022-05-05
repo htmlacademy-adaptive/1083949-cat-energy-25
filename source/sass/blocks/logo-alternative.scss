@@ -3,7 +3,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .logo-alternative {
+  .page-catalog .logo-alternative,
+  .page-form .logo-alternative {
     display: block;
     margin-right: 60px;
     cursor: pointer;

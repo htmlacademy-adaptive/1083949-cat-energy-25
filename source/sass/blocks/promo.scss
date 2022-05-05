@@ -67,14 +67,6 @@
   margin: 0;
 }
 
-.promo__link-button:hover {
-  background-color: $color-green-hover;
-}
-
-.promo__link-button:focus {
-  color: transparentize($color-white, 0.3);
-}
-
 .promo__background-wrapper {
   padding: 27px 0 0;
 }
@@ -150,7 +142,6 @@
     margin-bottom: 82px;
     background-color: transparent;
     background-image: none;
-
 
     &::after {
       content: none;
