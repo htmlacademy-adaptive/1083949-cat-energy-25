@@ -1,5 +1,5 @@
 .logo-alternative {
-  display: none;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,6 +19,7 @@
   }
 
   .logo-alternative__img {
+    display: block;
     width: 174px;
     height: 51px;
   }
@@ -26,6 +27,7 @@
 
 @media (min-width: $desktop-width) {
   .logo-alternative__img {
+    display: block;
     width: 202px;
     height: 59px;
   }
