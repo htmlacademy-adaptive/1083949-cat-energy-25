@@ -81,6 +81,7 @@
   .card-add__button-wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 28px;
   }
 }
 
@@ -107,5 +108,14 @@
     justify-content: space-between;
     padding-right: 30px;
     padding-bottom: 0;
+  }
+
+  .card-add__button-wrapper {
+    margin-bottom: 0;
+  }
+
+  .card-add__button {
+    min-width: 244px;
+    padding: 10px 91px;
   }
 }

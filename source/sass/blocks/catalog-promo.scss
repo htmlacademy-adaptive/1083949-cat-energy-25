@@ -6,7 +6,7 @@
   background-image: url("/img/catalog_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   z-index: -1;
 }
 
@@ -61,6 +61,7 @@
 @media (min-width: $desktop-width) {
   .catalog-promo {
     width: 100%;
+    margin-bottom: 0;
   }
 
   .catalog-promo__wrapper {

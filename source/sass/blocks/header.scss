@@ -1,6 +1,6 @@
 .header {
   width: auto;
-  padding: 10px 0 17px;
+  padding: 10px 0 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -9,11 +9,18 @@
   background-color: $color-white;
 }
 
-.header__flex-wrapper {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-wrapper {
+  margin: 0 auto;
+}
+
+.header__logo-wrapper {
+  padding: 0 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $color-border-advantages;
+}
+
+.header__menu {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,49 +35,40 @@
     align-items: center;
   }
 
-  .header__flex-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 0;
+  .header__logo-wrapper {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header {
     position: relative;
-    width: auto;
+    top: 0;
+    width: 100%;
     margin: 0;
     margin-bottom: 10px;
     padding: 54px 0 64px;
     background-color: transparent;
+    z-index: 2;
   }
 
   .header--bg {
-    background-image: linear-gradient(to bottom, $color-basic-green $height-desktop-bg, $color-white $height-desktop-bg);
-    background-repeat: no-repeat;
-    background-size: 50% 100%;
-    background-position: top right;
-    z-index: 0;
-
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      z-index: -1;
-      content: " ";
-      width: 50%;
-      height: $height-desktop-bg;
-      background-image: url("/img/promo_background_desktop.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: right;
-    }
+    position: absolute;
   }
 
   .header-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1020px;
     justify-content: center;
     align-items: center;
+  }
+
+  .header__logo-wrapper {
+    grid-column: 1 / 2;
+  }
+
+  .header__menu {
+    grid-column: 2 / 3;
   }
 }

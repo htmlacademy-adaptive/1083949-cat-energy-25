@@ -95,7 +95,7 @@
 
 @media (min-width: $tablet-width) {
   .programs {
-    width: auto;
+    width: 100%;
     margin-bottom: 25px;
   }
 
@@ -149,7 +149,10 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    width: auto;
+    width: 100%;
+    display: grid;
+    grid-auto-columns: auto;
+    justify-content: center;
   }
 
   .programs__list {
