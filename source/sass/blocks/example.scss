@@ -4,6 +4,11 @@
   width: auto;
 }
 
+.example__background-wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .example__wrapper-img {
   margin-bottom: 40px;
   text-align: center;
@@ -104,6 +109,15 @@
     background-color: $color-white;
   }
 
+  .example-wrapper {
+    width: 100%;
+  }
+
+  .example__background-wrapper {
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
   .example__title {
     font-size: 60px;
     line-height: 100%;
@@ -174,12 +188,12 @@
   .example__wrapper-img {
     width: 100%;
     margin: 0;
-    padding: 0 30px;
+    padding: 0;
     padding-bottom: 56px;
     background-color: $color-grey;
     background-image: linear-gradient(to bottom, $color-white $height-tablet-bg, $color-grey $height-tablet-bg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
     background-position: top center;
   }
 
@@ -195,32 +209,40 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    width: auto;
     padding: 0;
     background-color: $color-white;
+    background-image: linear-gradient(to bottom, $color-white $height-tablet-bg, $color-grey $height-tablet-bg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top center;
   }
 
   .example-wrapper {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
   }
 
   .example__title {
     font-size: 60px;
     line-height: 100%;
     margin-bottom: 30px;
-    padding: 40px 110px;
-  }
-
-  .example__background-wrapper {
-    padding: 0;
+    padding: 40px 0;
   }
 
   .example__wrapper {
     background-color: $color-grey;
   }
 
+  .example__background-wrapper {
+    padding: 0;
+  }
+
   .example__text {
-    padding: 70px 110px;
+    padding: 70px 0;
     margin: 0;
     font-size: 16px;
     line-height: 150%;
@@ -235,7 +257,7 @@
   }
 
   .example__list {
-    padding: 0 110px;
+    padding: 0;
   }
 
   .example__item {
@@ -248,12 +270,13 @@
   }
 
   .example__total {
-    padding: 0 110px;
+    padding: 0;
     min-width: 366px;
     text-align: center;
   }
 
   .example__wrapper-img {
+    padding: 0 110;
     padding-bottom: 65px;
     margin: 0;
   }

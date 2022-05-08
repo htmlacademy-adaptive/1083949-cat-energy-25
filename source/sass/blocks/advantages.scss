@@ -135,6 +135,9 @@
     padding-bottom: 0;
     margin-bottom: 26px;
     border: none;
+    display: grid;
+    grid-auto-columns: auto;
+    justify-content: center;
   }
 
   .advantages__list {

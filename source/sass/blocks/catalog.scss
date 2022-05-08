@@ -52,13 +52,15 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
+    display: grid;
     width: 100%;
     padding-bottom: 76px;
     margin-bottom: 0;
   }
 
   .catalog__title {
-    padding: 0 110px;
+    padding: 0;
+    padding-bottom: 41px;
     margin-bottom: 84px;
     font-size: 60px;
     line-height: 100%;

@@ -85,4 +85,14 @@
   .form {
     margin-bottom: 82px;
   }
+
+  .form-container {
+    margin: 0 auto;
+    max-width: $desktop-width;
+  }
+
+  .filter__flex-container {
+    margin: 0 auto;
+    max-width: $desktop-width;
+  }
 }

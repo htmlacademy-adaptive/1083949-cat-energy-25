@@ -82,7 +82,9 @@
   }
 
   .catalog-add__title-container {
-    margin: 0 110px;
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 110px;
   }
 
   .catalog-add__title {
@@ -91,6 +93,7 @@
   }
 
   .catalog-add-wrapper {
+    max-width: $desktop-width;
     margin-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 245px;

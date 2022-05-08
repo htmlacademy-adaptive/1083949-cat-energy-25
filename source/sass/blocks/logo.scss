@@ -1,14 +1,57 @@
-.logo {
-  display: block;
+.logo__mobile {
+  display: inline-block;
   margin: 0;
   margin-right: 57px;
   padding: 0;
-  width: 33px;
-  height: 37px;
+}
+
+.logo__icon-mobile {
+  position: relative;
+}
+
+.logo__icon-label {
+  position: absolute;
+  left: calc(50vw - 50px);
+  top: 24px;
+}
+
+.logo__tablet {
+  display: none;
+}
+
+.logo__desktop {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .logo {
+  .logo__mobile {
     display: none;
+  }
+
+  .logo__tablet {
+    display: block;
+  }
+
+  .logo {
+    margin-right: 60px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus-within {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
   }
 }

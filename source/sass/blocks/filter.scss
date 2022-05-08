@@ -62,8 +62,6 @@
 }
 
 .filter__contacts {
-  // display: flex;
-  // flex-direction: column;
   width: 100%;
   margin: 0;
   margin-top: 26px;
@@ -261,6 +259,18 @@
     line-height: 150%;
   }
 
+  .filter__about-field:hover {
+    border: 1px solid $color-special-grey;
+  }
+
+  .filter__about-field:focus {
+    border: 1px solid $color-dark-grey;
+  }
+
+  .filter__about-field--error {
+    border: 2px solid $color-error;
+  }
+
   .filter__about-field::placeholder {
     font-size: 20px;
     line-height: 150%;
@@ -333,10 +343,31 @@
     line-height: 150%;
   }
 
+  .filter__contacts-field:hover {
+    border: 1px solid $color-special-grey;
+  }
+
+  .filter__contacts-field:focus {
+    border: 1px solid $color-dark-grey;
+  }
+
+  .filter__contacts-field--error {
+    border: 2px solid $color-error;
+  }
+
   .filter__contacts-icon {
     position: absolute;
     right: 84px;
   }
+
+  .filter__contacts-wrapper:focus-within * {
+    stroke: $color-basic-green;
+  }
+
+  .filter__contacts-wrapper--error * {
+    stroke: $color-error;
+  }
+
 
   .filter__contacts-field::placeholder {
     font-size: 20px;
@@ -400,7 +431,7 @@
   }
 
   .filter__button-wrapper {
-    display: inline-block;
+    display: flex;
     flex-direction: row;
   }
 
@@ -456,7 +487,9 @@
   }
 
   .filter__decoration-container {
-    margin: 0 70px;
+    margin: 0 auto;
+    max-width: $desktop-width;
+    padding: 0 110px;
   }
 
   .filter__contacts {
@@ -467,6 +500,9 @@
 
   .filter__contacts-container {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $desktop-width;
   }
 
   .filter__contacts-wrapper {
@@ -480,6 +516,7 @@
 
   .filter__contacts-subtitle {
     padding: 0 40px;
+    margin-left: -40px;
   }
 
   .filter__contacts-field {
@@ -507,10 +544,13 @@
 
   .filter__comment-subtitle {
     padding: 0 40px;
+    margin-left: -40px;
   }
 
   .filter__comment .container {
     padding: 0 110px;
+    margin: 0 auto;
+    max-width: $desktop-width;
   }
 
   .filter__checkbox {
@@ -518,12 +558,24 @@
     padding-left: 0;
   }
 
+  .filter__checkbox-subtitle {
+    margin-left: -40px;
+  }
+
   .filter__checkbox-list {
     padding: 0 110px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $desktop-width;
   }
 
   .filter__checkbox-item {
     width: calc(100% / 4);
+  }
+
+  .filter__button-wrapper {
+    margin: 0 auto;
+    max-width: $desktop-width;
   }
 
   .filter__button {
