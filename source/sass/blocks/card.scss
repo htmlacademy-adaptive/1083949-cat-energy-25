@@ -18,8 +18,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 8px;
-  margin-bottom: 13px;
-  padding-top: 8px;
+  margin-bottom: 10px;
+  padding-top: 14px;
 }
 
 .card__list-description {
@@ -58,12 +58,14 @@
 }
 
 .card__link-img {
-  padding: 11px 28px 0;
+  padding: 0 28px;
 }
 
 .card__img-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 112px;
 }
 
 .card__button-wrapper {
@@ -92,6 +94,7 @@
     flex-direction: column;
     align-items: center;
     min-width: 252px;
+    margin: 0;
   }
 
   .card__wrapper {
@@ -101,15 +104,16 @@
   .card__link {
     min-width: 174px;
     padding: 0 20px;
-    margin-bottom: 21px;
+    margin-bottom: 13px;
   }
 
   .card__img-container {
-    display: inline-block;
+    display: flex;
+    align-items: flex-end;
     text-align: center;
     width: 168px;
     height: 200px;
-    margin: 0 42px 10px;
+    margin: 0 42px 28px;
   }
 
   .card__link-img {
@@ -119,6 +123,41 @@
   .card__img {
     position: relative;
     bottom: 0;
+  }
+
+  .card__img--chicken-500 {
+    width: 161px;
+    height: 172px;
+  }
+
+  .card__img--chicken-1000 {
+    width: 168px;
+    height: 200px;
+  }
+
+  .card__img--fish-500 {
+    width: 163px;
+    height: 174px;
+  }
+
+  .card__img--fish-1000 {
+    width: 168px;
+    height: 200px;
+  }
+
+  .card__img--buckwheat-500 {
+    width: 161px;
+    height: 171px;
+  }
+
+  .card__img--buckwheat-1000 {
+    width: 168px;
+    height: 200px;
+  }
+
+  .card__img--rice-500 {
+    width: 163px;
+    height: 174px;
   }
 
   .card__link-title {
@@ -133,7 +172,7 @@
 @media (min-width: $desktop-width) {
   .card {
     max-width: 245px;
-    padding: 0 35px 40px 30px;
+    padding: 0 35px 40px 38px;
   }
 
   .card__container {
@@ -144,20 +183,36 @@
   .card__img-container {
     width: 172px;
     height: 196px;
-    margin: 0 4px 46px;
+    padding-bottom: 3px;
+    margin: 0 4px 35px;
+  }
+
+  .card__img--chicken-1000 {
+    width: 172px;
+    height: 201.94px;
+  }
+
+  .card__img--fish-1000 {
+    width: 172px;
+    height: 196px;
+  }
+
+  .card__img--buckwheat-1000 {
+    width: 172px;
+    height: 196px;
   }
 
   .card__wrapper {
-    margin: 0 30px 33px 35px;
+    margin: 0 30px 31px 30px;
   }
 
   .card__link {
     padding: 0;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   .card__link-title {
     line-height: 105%;
-    padding: 0 15px 0 20px;
+    padding: 0 15px 0 15px;
   }
 }

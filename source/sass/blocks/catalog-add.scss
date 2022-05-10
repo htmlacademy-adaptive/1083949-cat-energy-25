@@ -32,7 +32,7 @@
 
 .catalog-add__list {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   padding: 0;
   list-style-type: none;
   border-top: 1px solid $color-special-grey;
@@ -58,7 +58,7 @@
   .catalog-add__title {
     display: inline-block;
     background-color: $color-white;
-    padding: 25px 36px;
+    padding: 0 36px;
     margin-bottom: 0;
     font-size: 36px;
     line-height: 100%;
@@ -66,12 +66,12 @@
   }
 
   .catalog-add__list {
-    margin-top: 65px;
+    margin-top: 76px;
     margin-bottom: 69px;
   }
 
   .catalog-add__card-add {
-    padding: 0 38px;
+    padding: 25px 38px 29px;
   }
 }
 
@@ -94,14 +94,14 @@
 
   .catalog-add-wrapper {
     max-width: $desktop-width;
-    margin-top: 80px;
+    margin-top: 76px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 245px;
     column-gap: 80px;
   }
 
   .catalog-add__card-add {
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
     display: flex;
     justify-content: space-between;
   }

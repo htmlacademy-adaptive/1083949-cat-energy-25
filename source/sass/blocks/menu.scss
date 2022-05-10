@@ -19,7 +19,7 @@
   width: 40px;
   height: 40px;
   top: -47px;
-  right: 0;
+  right: 5px;
   z-index: 2;
   border: none;
   background-color: $color-white;
@@ -153,26 +153,27 @@
 @media (min-width: $tablet-width) {
   .menu {
     padding: 0;
+    font-weight: 400;
+    text-align: right;
   }
 
   .menu__content-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 0 20px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 35px;
+    padding: 0;
+    min-width: 440px;
   }
 
   .menu__content-item {
     border-bottom: none;
-  }
-
-  .menu__content-item:not(:last-child) {
-    padding-right: 35px;
+    padding-right: 0;
   }
 
   .menu__content-link {
     display: inline-block;
     vertical-align: middle;
+    font-weight: 400;
     font-size: 18px;
     line-height: 133%;
     padding: 0;
@@ -212,6 +213,7 @@
     line-height: 150%;
     color: $color-black;
     padding-bottom: 10px;
+    padding-top: 10px;
   }
 
   .menu__content-link--desktop {
@@ -219,7 +221,7 @@
   }
 
   .menu__content-link--desktop.menu__content-link--current {
-    padding-bottom: 8px;
+    padding-bottom: 7px;
     border-bottom: 2px solid $color-white;
   }
 

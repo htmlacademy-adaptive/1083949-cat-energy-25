@@ -47,7 +47,12 @@
 @media (min-width: $tablet-width) {
   .range {
     max-width: 100%;
-    margin: 0 66px;
+    margin: 0 30px;
+    padding: 0 70px;
+  }
+
+  .range__toggle {
+    padding: 0;
   }
 
   .range__toggle-label {
@@ -65,6 +70,7 @@
   }
 
   .range__scale {
+    margin-left: 6px;
     position: relative;
     width: 426px;
     height: 6px;
@@ -74,7 +80,7 @@
 
   .range__toggle-wrapper {
     position: absolute;
-    top: -16px;
+    top: -14px;
     left: 50%;
     transform: translateX(-50%);
     width: 34px;
@@ -109,5 +115,18 @@
   .range__toggle-slider:focus {
     border: 1px solid $color-basic-green;
     box-shadow: 0 3px 5px transparentize($color-black, 0.2);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 8px;
+  }
+
+  .range__scale {
+    margin: 0 24px;
   }
 }

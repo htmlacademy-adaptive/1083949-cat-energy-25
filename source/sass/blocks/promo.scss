@@ -31,9 +31,25 @@
   }
 }
 
+@media (min-resolution: 2dppx) {
+  .promo::after {
+    content: " ";
+    width: 100%;
+    height: $height-mobile-bg;
+    background-image: url("/img/promo_background2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
 .promo__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   padding: 0 20px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -45,7 +61,7 @@
 
 .promo__text {
   margin: 0;
-  padding: 0 40px 29px;
+  padding: 0 40px 30px;
   color: $color-white;
   text-transform: uppercase;
   text-align: center;
@@ -68,7 +84,7 @@
 }
 
 .promo__background-wrapper {
-  padding: 27px 0 0;
+  padding: 28px 0 0;
 }
 
 .promo__img {
@@ -93,11 +109,14 @@
     flex-direction: column;
   }
 
+  .promo__background-wrapper {
+    padding: 0;
+  }
+
   .promo__title {
     margin-bottom: 41px;
-    padding-right: 190px;
-    padding-left: 87px;
-    max-width: 500px;
+    padding-right: 230px;
+    padding-left: 117px;
     text-align: left;
     color: $color-black;
     font-size: 60px;
@@ -107,16 +126,11 @@
   .promo__text {
     margin-bottom: 20px;
     padding: 0;
-    padding-left: 89px;
+    padding-left: 119px;
     text-align: left;
     color: $color-black;
     font-size: 20px;
     line-height: 100%;
-  }
-
-  .promo__img {
-    width: 709px;
-    height: 609px;
   }
 
   .promo__button-wrapper {
@@ -126,10 +140,10 @@
 
   .promo__link-button {
     max-width: 244px;
-    margin-left: 91px;
+    margin-left: 120px;
     box-sizing: border-box;
     display: block;
-    padding: 14px 26px;
+    padding: 17px 26px;
     font-size: 20px;
     line-height: 100%;
     color: $color-white;
@@ -141,6 +155,11 @@
 
   .promo__link-button:focus {
     color: transparentize($color-white, 0.3);
+  }
+
+  .promo__img {
+    width: 709px;
+    height: 609px;
   }
 }
 
@@ -175,6 +194,22 @@
     }
   }
 
+  @media (min-resolution: 2dppx) {
+    .promo::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+      content: " ";
+      width: 50%;
+      height: 100%;
+      background-image: url("/img/promo_background_desktop2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+    }
+  }
+
   .promo-wrapper {
     position: relative;
     display: block;
@@ -193,15 +228,15 @@
   }
 
   .promo__text {
-    margin-bottom: 23px;
+    margin-bottom: 52px;
     padding-left: 80px;
     text-align: left;
   }
 
   .promo__img {
     position: absolute;
-    top: 19px;
-    left: 558px;
+    top: 28px;
+    left: 448px;
     width: 552px;
     height: 499px;
     background-color: transparent;
@@ -210,5 +245,9 @@
   .promo__button-wrapper {
     top: 0;
     padding-bottom: 185px;
+  }
+
+  .promo__link-button {
+    margin-left: 80px;
   }
 }

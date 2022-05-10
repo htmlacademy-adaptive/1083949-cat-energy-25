@@ -19,6 +19,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .socials__item {
+    padding-left: 24px;
+    padding-right: 0;
+  }
+
   .socials__link:hover .link__svg {
     stroke: $color-basic-green;
   }
