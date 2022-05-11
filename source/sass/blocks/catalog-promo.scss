@@ -3,7 +3,7 @@
   margin: 0 0 35px;
   padding: 0;
   background-color: $color-basic-green;
-  background-image: url("/img/catalog/catalog_background_1x.png");
+  background-image: url("../img/catalog/catalog_background_1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -12,12 +12,7 @@
 
 @media (min-resolution: 2dppx) {
   .catalog-promo {
-    background-color: $color-basic-green;
-    background-image: url("/img/catalog/catalog_background_2x.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
+    background-image: url("../img/catalog/catalog_background_2x.png");
   }
 }
 

@@ -20,7 +20,7 @@
     content: " ";
     width: 100%;
     height: $height-mobile-bg;
-    background-image: url("/img/promo_background.jpg");
+    background-image: url("../img/promo_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,17 +33,7 @@
 
 @media (min-resolution: 2dppx) {
   .promo::after {
-    content: " ";
-    width: 100%;
-    height: $height-mobile-bg;
-    background-image: url("/img/promo_background2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    background-image: url("../img/promo_background2x.jpg");
   }
 }
 
@@ -187,7 +177,7 @@
       content: " ";
       width: 50%;
       height: 100%;
-      background-image: url("/img/promo_background_desktop.png");
+      background-image: url("../img/promo_background_desktop.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: right;
@@ -196,17 +186,7 @@
 
   @media (min-resolution: 2dppx) {
     .promo::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      z-index: -1;
-      content: " ";
-      width: 50%;
-      height: 100%;
-      background-image: url("/img/promo_background_desktop2x.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: right;
+      background-image: url("../img/promo_background_desktop2x.png");
     }
   }
 
