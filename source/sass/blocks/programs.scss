@@ -19,7 +19,7 @@
   height: 53px;
   top: 21px;
   left: 22px;
-  background-image: url("/img/icon/cat_slim.svg");
+  background-image: url("../img/icon/cat_slim.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -32,7 +32,7 @@
   height: 50px;
   top: 24px;
   left: 13px;
-  background-image: url("/img/icon/cat_pro.svg");
+  background-image: url("../img/icon/cat_pro.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -70,7 +70,7 @@
 .programs__link {
   min-width: 165px;
   display: block;
-  padding: 4px 25px 4px 0;
+  padding: 4px 22px 4px 0;
   font-size: 16px;
   line-height: 100%;
   text-transform: uppercase;
@@ -81,7 +81,7 @@
 .programs__link-icon {
   width: 24px;
   padding: 0;
-  margin-left: 15px;
+  margin-left: 12px;
 }
 
 .programs__link:hover .programs__link-icon {
@@ -96,7 +96,7 @@
 @media (min-width: $tablet-width) {
   .programs {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
   }
 
   .programs__item {
@@ -145,6 +145,10 @@
     font-size: 20px;
     line-height: 150%;
   }
+
+  .programs__link-icon {
+    margin-left: 22px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -153,6 +157,7 @@
     display: grid;
     grid-auto-columns: auto;
     justify-content: center;
+    margin-bottom: 42px;
   }
 
   .programs__list {
@@ -184,7 +189,7 @@
   }
 
   .programs__item-subtitle {
-    margin: 0 0 73px 214px;
+    margin: 0 0 73px 162px;
   }
 
   .programs__item-text {
