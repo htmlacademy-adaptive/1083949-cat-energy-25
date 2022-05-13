@@ -19,7 +19,7 @@
   height: 53px;
   top: 21px;
   left: 22px;
-  background-image: url("../img/icon/cat_slim.svg");
+  background-image: url("../img/cat_slim.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -32,7 +32,7 @@
   height: 50px;
   top: 24px;
   left: 13px;
-  background-image: url("../img/icon/cat_pro.svg");
+  background-image: url("../img/cat_pro.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -96,6 +96,7 @@
 @media (min-width: $tablet-width) {
   .programs {
     width: 100%;
+    margin-top: -54px;
     margin-bottom: 45px;
   }
 

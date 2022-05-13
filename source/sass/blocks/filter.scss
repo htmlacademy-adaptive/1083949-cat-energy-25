@@ -5,13 +5,14 @@
 .filter__about {
   display: flex;
   flex-direction: column;
-  padding-bottom: 24px;
+  padding-bottom: 8px;
   border: none;
 }
 
 .filter__about-wrapper {
-  margin: 0 0 13px;
+  margin: 0 0 14px;
   display: flex;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
@@ -19,13 +20,13 @@
   white-space: nowrap;
   margin: 0;
   padding: 0;
-  margin-right: 13px;
+  margin-right: 15px;
   text-transform: uppercase;
 }
 
 .filter__about-field {
   width: 100%;
-  padding: 13px 15px;
+  padding: 14px 15px;
   border: 1px solid $color-border-form;
   appearance: none;
 }
@@ -40,7 +41,7 @@
 
 .filter__radio {
   padding-top: 22px;
-  padding-bottom: 19px;
+  padding-bottom: 5px;
   border: none;
 }
 
@@ -65,7 +66,7 @@
   width: 100%;
   margin: 0;
   margin-top: 26px;
-  padding: 0 0 23px;
+  padding: 0 0 10px;
   border: none;
 }
 
@@ -81,6 +82,10 @@
   height: 2px;
   background-color: $color-basic-green;
   z-index: -1;
+}
+
+.filter__decoration--contacts::before {
+  top: 30%;
 }
 
 .filter__decoration-container {
@@ -123,7 +128,7 @@
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 13px 15px;
+  padding: 15px;
   border: 1px solid $color-border-form;
   appearance: none;
 }
@@ -145,14 +150,14 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   border: none;
 }
 
 .filter__comment-subtitle {
   display: inline-block;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 23px 0 20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 108%;
@@ -169,7 +174,7 @@
   width: 100%;
   margin: 0;
   margin-top: 37px;
-  padding: 0 15px;
+  padding: 0 10px;
   min-height: 150px;
   border: 1px solid $color-border-form;
   appearance: none;
@@ -181,7 +186,7 @@
   line-height: 112%;
   text-transform: uppercase;
   color: $color-dark-grey;
-  padding: 10px;
+  padding: 8px 0;
   text-align: center;
 }
 
@@ -189,14 +194,14 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-bottom: 11px;
+  padding-bottom: 19px;
   border: none;
 }
 
 .filter__checkbox-subtitle {
   display: inline-block;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 23px 0 20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 108%;
@@ -206,7 +211,7 @@
 
 .filter__checkbox-list {
   list-style: none;
-  margin-top: 34px;
+  margin-top: 32px;
 }
 
 .filter__checkbox-item {
@@ -216,8 +221,7 @@
 .filter__checkbox-label {
   margin: 0;
   padding: 0;
-  padding-left: 44px;
-  padding-bottom: 15px;
+  padding-left: 45px;
   line-height: 30px;
   text-transform: uppercase;
 }
@@ -233,28 +237,30 @@
 }
 
 .filter__button {
-  margin-bottom: 21px;
-  padding: 7px 44px;
+  margin-bottom: 8px;
+  padding: 10px 44px;
 }
 
 @media (min-width: $tablet-width) {
   .filter__about {
     width: 100%;
-    padding: 0 37px 0 41px;
-    margin-bottom: 72px;
+    padding: 0 37px 0 30px;
+    margin-bottom: 52px;
   }
 
   .filter__about-wrapper {
-    margin-bottom: 20px;
-    padding: 0 37px 0 40px;
+    margin-bottom: 19px;
+    padding: 0 30px 0 40px;
   }
 
   .filter__about-label {
     font-size: 20px;
     line-height: 150%;
+    margin-right: 18px;
   }
 
   .filter__about-field {
+    padding: 11px 10px 10px 0;
     font-size: 20px;
     line-height: 150%;
   }
@@ -284,25 +290,31 @@
   .filter__radio {
     width: 100%;
     padding: 0 37px 0 41px;
-    margin-bottom: 71px;
+    margin-bottom: 74px;
   }
 
   .filter__radio-list {
-    margin: 0 37px 0 40px;
+    margin: 0 30px;
     padding: 25px;
+    padding-bottom: 10px;
     border: 1px solid $color-border-form;
+  }
+
+  .filter__radio-item {
+    padding: 5px 0;
+    margin-bottom: 13px;
   }
 
   .filter__radio-label {
     font-size: 20px;
     line-height: 150%;
-    margin-bottom: 13px;
-    padding-left: 59px;
+    padding-left: 62px;
   }
 
   .filter__contacts {
     width: 100%;
-    margin-bottom: 65px;
+    margin-top: 0;
+    margin-bottom: 46px;
     padding-bottom: 0;
   }
 
@@ -310,13 +322,17 @@
     margin: 0 30px;
   }
 
+  .filter__decoration--contacts::before {
+    top: 50%;
+  }
+
   .filter__contacts-subtitle {
     display: inline-block;
     max-width: 100%;
     font-size: 36px;
     line-height: 100%;
-    margin-bottom: 0;
-    padding: 0 40px;
+    padding: 0 39px;
+    margin-bottom: 10px;
   }
 
   br {
@@ -324,17 +340,26 @@
   }
 
   .filter__contacts-container {
-    margin-top: 76px;
+    margin-top: 66px;
   }
 
   .filter__contacts-wrapper {
-    padding: 0 35px 0 41px;
+    padding: 0 35px 0 39px;
+    margin-bottom: 20px;
   }
 
   .filter__contacts-label {
     font-size: 20px;
     line-height: 100%;
     padding: 0 18px 0 0;
+  }
+
+  .filter__contacts-label--email {
+    padding-right: 20px;
+  }
+
+  .filter__contacts-label--phone {
+    padding-right: 15px;
   }
 
   .filter__contacts-field {
@@ -376,23 +401,25 @@
 
   .filter__comment {
     width: 100%;
-    margin-bottom: 65px;
+    margin-bottom: 62px;
+    padding: 0;
   }
 
   .filter__comment-subtitle {
     font-size: 36px;
     line-height: 100%;
-    margin-bottom: 0;
+    margin-bottom: 8px;
     padding: 0 40px;
   }
 
   .filter__comment .container {
-    padding: 0 70px;
+    padding: 0 68px 0 70px;
   }
 
   .filter__comment-field {
-    margin-top: 76px;
-    padding: 10px 19px;
+    margin-top: 68px;
+    padding: 0 19px;
+    min-height: 174px;
   }
 
   .filter__comment-field::placeholder {
@@ -403,31 +430,36 @@
 
   .filter__checkbox {
     width: 100%;
+    padding: 0;
   }
 
   .filter__checkbox-subtitle {
     padding: 0 40px;
     font-size: 36px;
     line-height: 100%;
+    margin-bottom: 8px;
   }
 
   .filter__checkbox-list {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    margin-top: 57px;
-    margin-bottom: 22px;
-    padding: 0 70px;
+    margin-top: 49px;
+    margin-bottom: 24px;
+    padding: 0 11px 0 70px;
   }
 
   .filter__checkbox-item {
     width: 50%;
-    padding-bottom: 59px;
+    padding: 0;
+    margin-bottom: 34px;
   }
 
   .filter__checkbox-label {
     font-size: 20px;
     line-height: 150%;
     padding-left: 59px;
+    padding-top: 7px;
   }
 
   .filter__button-wrapper {
@@ -438,9 +470,10 @@
   .filter__button {
     font-size: 20px;
     line-height: 100%;
-    padding: 13px 45px;
+    padding: 16px 65px;
     margin-left: 40px;
     margin-right: 61px;
+    margin-bottom: 0;
   }
 
   .form__meta {
@@ -456,7 +489,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 65px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: $desktop-width;
     padding: 0 110px;
   }
 
@@ -473,6 +508,12 @@
 
   .filter__about-wrapper {
     padding: 0;
+  }
+
+
+  .filter__about-field {
+    font-size: 20px;
+    line-height: 150%;
   }
 
   .filter__radio {
@@ -495,7 +536,7 @@
   .filter__contacts {
     width: 100%;
     margin-top: 0;
-    margin-bottom: 69px;
+    margin-bottom: 48px;
   }
 
   .filter__contacts-container {
@@ -567,10 +608,16 @@
     margin-left: auto;
     margin-right: auto;
     max-width: $desktop-width;
+    margin-bottom: 31px;
   }
 
   .filter__checkbox-item {
-    width: calc(100% / 4);
+    width: calc((100% - 336px) / 4);
+    margin-right: 104px;
+  }
+
+  .filter__checkbox-item:last-child {
+    margin-right: 24px;
   }
 
   .filter__button-wrapper {
@@ -579,7 +626,7 @@
   }
 
   .filter__button {
-    padding: 14px 188px;
+    padding: 16px 208px;
     margin-right: 81px;
     margin-left: 0;
   }

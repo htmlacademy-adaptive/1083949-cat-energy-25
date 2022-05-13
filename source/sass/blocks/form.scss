@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0;
   padding-top: 27px;
+  margin-bottom: 18px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -23,7 +24,7 @@
 
 .form__text {
   margin: 0;
-  padding: 0 0 39px;
+  padding: 0 54px 39px 0;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 129%;
@@ -43,6 +44,7 @@
   .form {
     padding: 0;
     border: none;
+    margin-bottom: 72px;
   }
 
   .form__title {
@@ -57,7 +59,7 @@
     font-size: 20px;
     line-height: 150%;
     padding: 0 40px;
-    margin-bottom: 66px;
+    margin-bottom: 67px;
     max-width: 463px;
   }
 }
@@ -65,24 +67,6 @@
 @media (min-width: $desktop-width) {
   .form {
     width: 100%;
-  }
-
-  .form__title {
-    padding-left: 0;
-  }
-
-  .form__text {
-    padding-left: 0;
-  }
-
-  .filter__about-field {
-    font-size: 20px;
-    line-height: 150%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form {
     margin-bottom: 82px;
   }
 
@@ -91,8 +75,12 @@
     max-width: $desktop-width;
   }
 
-  .filter__flex-container {
-    margin: 0 auto;
-    max-width: $desktop-width;
+  .form__title {
+    padding-left: 0;
+  }
+
+  .form__text {
+    padding-left: 0;
+    max-width: 430px;
   }
 }
