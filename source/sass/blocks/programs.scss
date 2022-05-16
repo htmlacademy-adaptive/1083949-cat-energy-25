@@ -19,7 +19,7 @@
   height: 53px;
   top: 21px;
   left: 22px;
-  background-image: url("../img/icon/cat_slim.svg");
+  background-image: url("../img/cat_slim.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -32,14 +32,16 @@
   height: 50px;
   top: 24px;
   left: 13px;
-  background-image: url("../img/icon/cat_pro.svg");
+  background-image: url("../img/cat_pro.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .programs__item-subtitle {
-  white-space: nowrap;
+  word-break: break-all;
+  white-space: normal;
+  z-index: 0;
   margin: 0 0 20px 71px;
   padding: 9px 0;
   font-family: "Oswald", sans-serif;
@@ -96,6 +98,7 @@
 @media (min-width: $tablet-width) {
   .programs {
     width: 100%;
+    margin-top: -54px;
     margin-bottom: 45px;
   }
 
@@ -158,6 +161,7 @@
     grid-auto-columns: auto;
     justify-content: center;
     margin-bottom: 42px;
+    margin-top: auto;
   }
 
   .programs__list {

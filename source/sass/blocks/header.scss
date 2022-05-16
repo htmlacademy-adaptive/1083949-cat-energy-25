@@ -1,22 +1,12 @@
 .header {
   width: auto;
-  padding: 10px 0 0;
+  padding: 8px 0 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 100%;
   background-color: $color-white;
-}
-
-.header::before {
-  background-color: $color-white;
-  border-bottom: 1px solid $color-border-grey;
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
 }
 
 .header-wrapper {
@@ -37,10 +27,6 @@
   .header {
     width: auto;
     padding: 24px 30px 64px;
-  }
-
-  .header::before {
-    display: none;
   }
 
   .header-wrapper {
@@ -66,10 +52,6 @@
     padding: 54px 0 64px;
     background-color: transparent;
     z-index: 2;
-  }
-
-  .header::before {
-    display: none;
   }
 
   .header--bg {

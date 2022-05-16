@@ -158,9 +158,8 @@
   }
 
   .menu__content-list {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 35px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
     min-width: 440px;
   }
@@ -168,6 +167,11 @@
   .menu__content-item {
     border-bottom: none;
     padding-right: 0;
+    margin-right: 35px;
+  }
+
+  .menu__content-item:last-child {
+    margin-right: 0;
   }
 
   .menu__content-link {
@@ -201,6 +205,10 @@
     display: flex;
     justify-content: end;
     background-color: transparent;
+  }
+
+  .menu__content-list {
+    min-width: 478px;
   }
 
   .menu__toggle {

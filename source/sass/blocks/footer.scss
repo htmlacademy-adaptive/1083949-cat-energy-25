@@ -7,9 +7,10 @@
 
 .footer__socials {
   text-align: center;
-  padding: 18px 74px;
+  padding: 18px 62px;
   border-top: 1px solid $color-border-grey;
   border-bottom: 1px solid $color-border-grey;
+  margin: 0 auto;
 }
 
 .footer__logo {
@@ -73,5 +74,9 @@
 @media (min-width: $desktop-width) {
   .footer {
     width: auto;
+  }
+
+  .footer-wrapper {
+    max-width: 1440px;
   }
 }

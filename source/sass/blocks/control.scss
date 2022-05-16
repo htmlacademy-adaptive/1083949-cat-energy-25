@@ -42,7 +42,7 @@
 @media (min-width: $tablet-width) {
   .control__mark {
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     width: 40px;
     height: 40px;
@@ -56,8 +56,8 @@
 
   .control__field[type="radio"]:checked + .control__mark::before {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 9px;
+    left: 12px;
     width: 18px;
     height: 18px;
     background-color: $color-basic-green;
