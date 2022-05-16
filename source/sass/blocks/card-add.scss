@@ -3,8 +3,10 @@
 }
 
 .card-add__weight {
+  word-break: break-all;
   margin: 0;
   padding: 0;
+  padding-bottom: 14px;
   line-height: 14px;
 }
 
@@ -21,15 +23,16 @@
 }
 
 .card-add__price {
+  word-break: break-all;
   margin: 0;
   padding: 0;
+  padding-bottom: 14px;
   line-height: 100%;
   text-align: right;
   color: $color-dark-grey;
 }
 
 .card-add__wrapper {
-  padding-bottom: 14px;
   display: flex;
   justify-content: space-between;
 }
@@ -41,6 +44,7 @@
 
 .card-add__button {
   min-width: 282px;
+  word-break: break-all;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,10 +67,10 @@
 
   .card-add__wrapper {
     padding-top: 2px;
-    padding-bottom: 22px;
     display: flex;
     justify-content: end;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .card-add__list {
@@ -77,12 +81,14 @@
     text-align: right;
     font-size: 16px;
     line-height: 125%;
+    padding-bottom: 22px;
   }
 
   .card-add__price {
     font-size: 16px;
     line-height: 125%;
     min-width: 92px;
+    padding-bottom: 22px;
   }
 
   .card-add__button-wrapper {
