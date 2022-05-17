@@ -119,13 +119,17 @@
   .card-add__wrapper {
     width: 100%;
     justify-content: space-between;
-    padding-right: 0;
-    padding-bottom: 0;
+    padding: 0;
+  }
+
+  .card-add__weight {
+    padding: 0;
   }
 
   .card-add__price {
     text-align: left;
     min-width: 82px;
+    padding: 0;
   }
 
   .card-add__button-wrapper {

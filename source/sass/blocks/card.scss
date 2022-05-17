@@ -17,7 +17,7 @@
 .card__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 8px;
+  margin-top: 7px;
   margin-bottom: 10px;
   padding-top: 14px;
 }
@@ -34,7 +34,7 @@
 .card__link {
   display: inline-block;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   padding: 0;
   padding-right: 66px;
   text-decoration: none;
@@ -66,6 +66,24 @@
   justify-content: center;
   align-items: center;
   min-height: 112px;
+  padding-top: 9px;
+}
+
+.card__img-container--small {
+  align-items: top;
+  padding-top: 0;
+}
+
+.card__img--fish-500 {
+  margin-top: 18px;
+}
+
+.card__img--buckwheat-500 {
+  margin-top: 24px;
+}
+
+.card__img--rice-500 {
+  margin-top: 20px;
 }
 
 .card__button-wrapper {
@@ -178,13 +196,13 @@
   .card__container {
     min-width: 0;
     margin: 0;
+    padding-top: 9px;
   }
 
   .card__img-container {
     width: 172px;
     height: 196px;
-    padding-bottom: 3px;
-    margin: 0 4px 35px;
+    margin: 0 4px 36px;
   }
 
   .card__img--chicken-1000 {
@@ -208,11 +226,11 @@
 
   .card__link {
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
 
   .card__link-title {
     line-height: 105%;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
   }
 }
