@@ -210,12 +210,6 @@
   .example__img {
     display: none;
   }
-
-  .example__img-slider {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 26px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -232,8 +226,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 193px;
-    // display: flex;
-    // justify-content: center;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -297,10 +289,5 @@
   .example__wrapper-img {
     padding-bottom: 70px;
     margin: 0;
-  }
-
-  .example__img-slider {
-    justify-content: end;
-    margin-bottom: 27px;
   }
 }
