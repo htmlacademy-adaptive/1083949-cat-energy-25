@@ -10,7 +10,7 @@
 }
 
 .example__wrapper-img {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   text-align: center;
 }
 
@@ -25,7 +25,7 @@
 
 .example__total {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   padding: 0;
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -47,6 +47,9 @@
 }
 
 .example__text {
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.1px;
   margin: 0;
   margin-bottom: 19px;
   padding: 0;
@@ -130,6 +133,7 @@
   }
 
   .example__text {
+    letter-spacing: 0;
     font-size: 16px;
     line-height: 150%;
     padding-right: 10px;
@@ -206,12 +210,6 @@
   .example__img {
     display: none;
   }
-
-  .example__img-slider {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 26px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -228,8 +226,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 193px;
-    // display: flex;
-    // justify-content: center;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -293,10 +289,5 @@
   .example__wrapper-img {
     padding-bottom: 70px;
     margin: 0;
-  }
-
-  .example__img-slider {
-    justify-content: end;
-    margin-bottom: 27px;
   }
 }

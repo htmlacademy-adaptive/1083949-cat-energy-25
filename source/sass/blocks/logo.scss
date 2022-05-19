@@ -1,15 +1,15 @@
-.logo__mobile {
+.logo-mobile {
   display: inline-block;
   margin: 0;
   margin-right: 50px;
   padding: 0;
 }
 
-.logo__icon-mobile {
+.logo-mobile__icon-mobile {
   position: relative;
 }
 
-.logo__icon-label {
+.logo-mobile__icon-label {
   position: absolute;
   left: calc(50vw - 50px);
   top: 24px;
@@ -20,7 +20,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .logo__mobile {
+  .logo-mobile {
     display: none;
   }
 

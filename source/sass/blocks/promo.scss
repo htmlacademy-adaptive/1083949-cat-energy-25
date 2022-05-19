@@ -74,7 +74,7 @@
 }
 
 .promo__background-wrapper {
-  padding: 28px 0 0;
+  padding: 26px 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -153,6 +153,7 @@
   .promo__img {
     width: 709px;
     height: 609px;
+    padding-left: 36px;
   }
 }
 
@@ -224,6 +225,7 @@
     width: 552px;
     height: 499px;
     background-color: transparent;
+    padding: 0;
   }
 
   .promo__button-wrapper {

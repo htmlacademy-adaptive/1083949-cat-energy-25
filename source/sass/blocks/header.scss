@@ -1,6 +1,6 @@
 .header {
   width: auto;
-  padding: 8px 0 0;
+  padding: 10px 0 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -63,6 +63,8 @@
     grid-template-columns: auto 610px;
     justify-content: center;
     align-items: center;
+    // max-width: $desktop-width;
+    // padding: 0 110px;
   }
 
   .header__logo-wrapper {

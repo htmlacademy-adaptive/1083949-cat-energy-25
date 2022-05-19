@@ -1,0 +1,14 @@
+@media (min-width: $tablet-width) {
+  .img-slider {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__img-slider {
+    justify-content: end;
+    margin-bottom: 27px;
+  }
+}
