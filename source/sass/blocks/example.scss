@@ -28,7 +28,7 @@
   margin-bottom: 40px;
   padding: 0;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
@@ -40,7 +40,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 111%;
@@ -86,7 +86,7 @@
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
@@ -172,14 +172,15 @@
 
   .example__item-key--weight {
     max-width: 114px;
-    padding: 18px 10px;
+    padding: 10px;
+    margin-top: 10px;
   }
 
   .example__item-key--time {
     max-width: 145px;
     padding: 10px 10px;
     left: 8px;
-    top: 50px;
+    top: 55px;
   }
 
   .example__item-value {
@@ -274,6 +275,14 @@
 
   .example__item-key {
     background-color: $color-grey;
+  }
+
+  .example__item-key--weight {
+    margin-top: 4px;
+  }
+
+  .example__item-key--time {
+    top: 50px;
   }
 
   .example__total {

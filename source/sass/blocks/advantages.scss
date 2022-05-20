@@ -8,7 +8,7 @@
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 111%;
@@ -112,7 +112,7 @@
     counter-increment: advantages;
     content: counter(advantages);
     color: $color-grey;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 280px;
     line-height: 100%;

@@ -1,0 +1,27 @@
+.address-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.address-wrapper--catalog {
+  background-color: $color-basic-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .address-wrapper {
+    padding: 0;
+  }
+
+  .address-wrapper--form {
+    background-color: $color-basic-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address-wrapper {
+    width: 100%;
+    max-height: 400px;
+    padding: 0;
+  }
+}
