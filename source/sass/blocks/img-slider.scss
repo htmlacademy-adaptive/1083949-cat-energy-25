@@ -2,13 +2,13 @@
   .img-slider {
     display: flex;
     justify-content: center;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example__img-slider {
     justify-content: end;
-    margin-bottom: 27px;
+    margin-bottom: 17px;
   }
 }
