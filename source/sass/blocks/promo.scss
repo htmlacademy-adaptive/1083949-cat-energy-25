@@ -1,6 +1,6 @@
 .promo {
   width: 100%;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -41,7 +41,7 @@
   margin: 0;
   margin-bottom: 26px;
   padding: 0 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
@@ -55,7 +55,7 @@
   color: $color-white;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .promo__link-button {
@@ -63,7 +63,7 @@
   justify-content: center;
   color: $color-white;
   background-color: $color-basic-green;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 129%;
   text-transform: uppercase;
@@ -95,11 +95,6 @@
       content: none;
     }
   }
-
-  // .promo-wrapper {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
 
   .promo__background-wrapper {
     padding: 0;
