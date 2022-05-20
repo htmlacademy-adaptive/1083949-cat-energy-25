@@ -15,7 +15,7 @@
   top: 24px;
 }
 
-.logo__tablet {
+.logo {
   display: none;
 }
 
@@ -24,16 +24,12 @@
     display: none;
   }
 
-  .logo__tablet {
-    display: block;
-    height: 52px;
-  }
-
   .logo {
     display: inline-block;
     vertical-align: middle;
     margin-right: 94px;
     cursor: pointer;
+    height: 52px;
 
     &:hover {
       opacity: 0.8;
@@ -48,9 +44,6 @@
 @media (min-width: $desktop-width) {
   .logo {
     margin-right: 408px;
-  }
-
-  .logo__tablet {
     width: 202px;
     height: 59px;
   }
